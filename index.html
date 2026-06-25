@@ -3,24 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="ReGuide: a self-improving diffusion-policy framework that recycles guided rollouts as on-policy recovery data.">
+  <meta name="keywords" content="Diffusion Policies, Test-Time Guidance, Imitation Learning, Robot Learning, ReGuide">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  <title>ReGuide: From Test-Time Guidance to Self-Improving Diffusion Policies</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -42,85 +28,29 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">ReGuide: From Test-Time Guidance to<br>Self-Improving Diffusion Policies</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-            </span>
+            <span class="author-block">Tzu-Hsiang Lin,</span>
+            <span class="author-block">Srinivas Shakkottai,</span>
+            <span class="author-block">Dileep Kalathil,</span>
+            <span class="author-block">P. R. Kumar</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block">Texas A&amp;M University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="./static/reguide_paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -128,8 +58,9 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- arXiv Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -137,19 +68,9 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -157,17 +78,7 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -175,76 +86,17 @@
   </div>
 </section>
 
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+      <img src="./static/images/flow_v3.png" alt="ReGuide overview" width="100%"/>
+      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+        <span class="dnerf">ReGuide</span> turns test-time guidance into reusable on-policy recovery data:
+        it constructs phase targets, rolls out the policy with phase-conditioned guidance, and merges
+        successful guided rollouts back into training &mdash; forming an iterative
+        <i>rollout&ndash;collect&ndash;train</i> loop.
       </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -258,48 +110,32 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Behavior-cloned diffusion policies are expressive but remain vulnerable to covariate shift:
+            small deviations from demonstrated states can compound into task failure. Existing methods
+            address this either by expanding the training distribution through expert corrections or
+            synthetic augmentation, or by steering a frozen policy at test time with guidance from a
+            learned model. The former can be expensive or assumption-dependent, while the latter discards
+            the corrected trajectories after execution.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We introduce <b>ReGuide</b>, a self-improving framework that treats guided rollouts as reusable
+            on-policy recovery data. ReGuide first uses <b>Phase-Conditioned Guidance (PCG)</b> to generate
+            corrective rollouts: it constructs phase-specific latent targets, applies guidance only in the
+            drifted-but-recoverable regime, and guides through the estimated clean action to match the
+            dynamics model's training distribution. Successful guided rollouts are then absorbed back into
+            the policy through <b>ReGuide-FT</b>, which fine-tunes the current checkpoint, or
+            <b>ReGuide-FS</b>, which retrains from scratch on the augmented dataset; the two can also be
+            composed and iterated.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            On Robomimic Can, Square, Transport, and Tool Hang, ReGuide improves base-policy success by
+            <b>1.3&ndash;7.7&times;</b>, outperforms LPB in the test-time-only setting, and matched-data
+            ablations show that the gains come from guided recovery data rather than additional rollouts alone.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -307,135 +143,289 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
+    <!-- Method. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            ReGuide turns guidance into a data-generation mechanism for a behavior-cloned diffusion policy
+            without collecting additional expert demonstrations. It consists of three coupled components.
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- Component 1. -->
+        <h3 class="title is-4">1. Phase-Aware Target Construction</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            Long-horizon manipulation is phase-structured, and a single global target set can pull a rollout
+            toward the wrong stage or collapse valid behavior modes. ReGuide augments each state with temporal
+            differences <i>[v, p, &Delta;v, &Delta;p]</i>, clusters states after PCA, orders clusters by mean
+            timestep, and merges them into macro-phases. Each phase keeps multiple representative centroids as a
+            target set, and a soft-minimum distance preserves multimodality while remaining differentiable.
           </p>
         </div>
         <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
+          <img src="./static/images/target_construction.png" alt="Phase-aware target construction" width="100%"/>
+          <p class="has-text-justified" style="margin-top: 0.5rem;">
+            <b>Phase-aware target construction.</b> Latent states are clustered using temporally augmented
+            features, ordered by trajectory time, and grouped into macro-phases. Representative centroids from
+            each phase define the target sets used for phase-conditioned guidance.
+          </p>
         </div>
-        <!--/ Re-rendering. -->
+        <br/>
 
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
+        <!-- Component 2. -->
+        <h3 class="title is-4">2. Phase-Conditioned Guidance (PCG)</h3>
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            Dynamics gradients are reliable only near the data distribution. ReGuide guides through the
+            <i>estimated clean action</i> (adapting MPGD) to match the dynamics model's training distribution,
+            and applies a <b>two-threshold gate</b>: guidance is active only in the
+            <i>drifted-but-recoverable</i> regime. The lower threshold avoids perturbing already-correct
+            actions near the demonstration manifold; the upper threshold prevents trusting the dynamics model
+            where it extrapolates. Thresholds are phase-specific percentiles, so the gate adapts to the local
+            geometry of each stage.
           </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/three_regimes.png" alt="Three guidance regimes" width="75%"/>
+          <p class="has-text-justified" style="margin-top: 0.5rem;">
+            <b>Three regimes.</b> Guidance is applied only between the lower and upper distance thresholds &mdash;
+            off near the demonstrations (in-distribution) and off in the far extrapolation region.
           </p>
+        </div>
+        <br/>
+
+        <!-- Component 3. -->
+        <h3 class="title is-4">3. Iterative Self-Improvement</h3>
+        <div class="content has-text-justified">
           <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
+            Successful guided rollouts are filtered by a trajectory-level success signal and merged into the
+            training set. ReGuide absorbs them in two complementary ways, which can also be composed:
           </p>
+          <ul>
+            <li><b>ReGuide-FT</b> &mdash; fine-tunes the current checkpoint on a rehearsal mixture of
+              demonstrations and guided rollouts. Cheap, and preserves existing competence.</li>
+            <li><b>ReGuide-FS</b> &mdash; retrains a fresh policy from scratch on the augmented dataset,
+              escaping the base policy's local minimum at the cost of a full training run.</li>
+            <li><b>ReGuide-FS&rarr;FT</b> &mdash; applies ReGuide-FT on top of a ReGuide-FS checkpoint,
+              combining the strengths of both.</li>
+          </ul>
           <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            The updated policy then generates a new batch of higher-quality recovery data, yielding an
+            iterative rollout&ndash;collect&ndash;train loop that improves the policy without additional
+            expert demonstrations.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+    <!--/ Method. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            On four Robomimic tasks in a low-data regime, all ReGuide variants substantially improve over the
+            base diffusion policy. The composition ReGuide-FS&rarr;FT gives the best result on Can, Square, and
+            Transport, while iterated ReGuide-FT remains slightly stronger on Tool Hang.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/main_results.png" alt="Main results" width="100%"/>
+          <p class="has-text-justified" style="margin-top: 0.5rem;">
+            <b>Main results.</b> ReGuide improves base-policy success by 1.3&ndash;7.7&times; across tasks.
+            ReGuide-FT and ReGuide-FS are complementary; their composition is strongest on Can, Square, and
+            Transport. Error bars are standard error of the mean across 50 per-seed success rates.
+          </p>
+        </div>
+        <br/>
+
+        <!-- Results table. -->
+        <div class="content">
+          <p class="has-text-centered">
+            <b>Success rates across Robomimic tasks.</b>
+            <span class="has-text-grey-dark">PCG, ReGuide-FT, ReGuide-FS, and ReGuide-FS&rarr;FT all outperform
+            the base policy and LPB. Best is <b>bold</b>, second-best is <u>underlined</u>.</span>
+          </p>
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+              <thead>
+                <tr>
+                  <th>Task</th>
+                  <th>Base Policy</th>
+                  <th>LPB</th>
+                  <th>PCG</th>
+                  <th>ReGuide-FT (it.1)</th>
+                  <th>ReGuide-FT (it.2)</th>
+                  <th>ReGuide-FS</th>
+                  <th>ReGuide-FS&rarr;FT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>Can</b></td>
+                  <td>0.492</td>
+                  <td>&mdash;</td>
+                  <td>0.501</td>
+                  <td>0.601</td>
+                  <td>0.624</td>
+                  <td><u>0.676</u></td>
+                  <td><b>0.723</b></td>
+                </tr>
+                <tr>
+                  <td><b>Square</b></td>
+                  <td>0.563</td>
+                  <td>0.561</td>
+                  <td>0.584</td>
+                  <td>0.659</td>
+                  <td>0.712</td>
+                  <td><u>0.714</u></td>
+                  <td><b>0.734</b></td>
+                </tr>
+                <tr>
+                  <td><b>Transport</b></td>
+                  <td>0.466</td>
+                  <td>0.484</td>
+                  <td>0.514</td>
+                  <td>0.646</td>
+                  <td><u>0.695</u></td>
+                  <td>0.682</td>
+                  <td><b>0.706</b></td>
+                </tr>
+                <tr>
+                  <td><b>Tool Hang</b></td>
+                  <td>0.031</td>
+                  <td>0.031</td>
+                  <td>0.038</td>
+                  <td>0.159</td>
+                  <td><b>0.240</b></td>
+                  <td><u>0.166</u></td>
+                  <td>0.233</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br/>
+
+        <!-- Iteration. -->
+        <h3 class="title is-4">Iterative self-improvement</h3>
+        <div class="content has-text-justified">
+          <p>
+            The second iteration of ReGuide-FT improves over the first on all four tasks, showing that the
+            updated policy can generate useful new guided rollouts. Gains are not unbounded: reaching the
+            second-iteration peak requires more total guided rollouts, reflecting diminishing returns as the
+            policy improves and the fixed dynamics model becomes less aligned with it.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/iteration_compounding.png" alt="Iterative self-improvement" width="100%"/>
+          <p class="has-text-justified" style="margin-top: 0.5rem;">
+            <b>Iterative self-improvement.</b> The x-axis shows the cumulative number of guided rollouts
+            collected to update the policy; iteration 2 breaks the single-round ceiling on every task.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Results. -->
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Ablations. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Ablations</h2>
+        <div class="content has-text-justified">
+          <p>
+            We isolate the main design choices in ReGuide. Test-time guidance ablations are run on Transport;
+            data-absorption ablations on Can and Square.
+          </p>
+        </div>
+
+        <!-- Guided vs additional data. -->
+        <h3 class="title is-4">Guided rollouts vs. additional data</h3>
+        <div class="content has-text-justified">
+          <p>
+            A natural concern is that ReGuide's gains come from extra data rather than guidance specifically.
+            At <i>matched</i> rollout counts, guided rollouts beat unguided base-policy rollouts on every task
+            under both ReGuide-FS and ReGuide-FT &mdash; ruling out the "just more data" explanation.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/ablation_guided_vs_base.png" alt="Guided vs base-policy rollouts at matched data" width="85%"/>
+          <p class="has-text-justified" style="margin-top: 0.5rem;">
+            <b>Guided vs. unguided rollouts at matched dataset size.</b> Guided rollouts (orange) dominate
+            unguided rollouts (gray) at every count, across tasks and both absorption modes.
+          </p>
+        </div>
+        <br/>
+
+        <!-- Guidance design ablations. -->
+        <h3 class="title is-4">Guidance design (test-time, Transport)</h3>
+        <div class="content has-text-justified">
+          <p>
+            Three choices drive PCG's test-time gains: an intermediate number of phase targets
+            (preserving multimodality without diluting the signal), the two-threshold gate (the
+            <i>upper</i> threshold contributes most of the benefit), and differentiating through the
+            estimated clean action rather than the noisy iterate.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="./static/images/ablation_phase_targets.png" alt="Number of phase targets" width="100%"/>
+            <p style="margin-top: 0.3rem;"><b>Phase targets $M$.</b> An intermediate $M\approx50$ is best.</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/images/ablation_gating.png" alt="Two-threshold gate" width="100%"/>
+            <p style="margin-top: 0.3rem;"><b>Gating.</b> The full lower+upper gate wins.</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/images/ablation_clean_vs_noisy.png" alt="Clean action vs noisy iterate" width="100%"/>
+            <p style="margin-top: 0.3rem;"><b>Guidance target.</b> Clean-action guidance wins.</p>
+          </div>
+        </div>
+        <br/>
+
+        <!-- Absorption ablations. -->
+        <h3 class="title is-4">Absorbing guided data</h3>
+        <div class="content has-text-justified">
+          <p>
+            The buffer-share ratio &rho; in ReGuide-FT is a mild stability/plasticity knob (roughly flat
+            around its optimum). At the composition step, ReGuide-FT and ReGuide-FS reach statistically
+            comparable performance &mdash; making ReGuide-FT the better engineering choice for further
+            iterations, since it converges in far fewer steps from an already-competent checkpoint.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="./static/images/ablation_rho.png" alt="Buffer-share ratio" width="100%"/>
+            <p style="margin-top: 0.3rem;"><b>Buffer-share ratio &rho;.</b> Performance is roughly flat;
+              &rho;&nbsp;&approx;&nbsp;0.7 is best on Can.</p>
+          </div>
+          <div class="column has-text-centered">
+            <img src="./static/images/ablation_ft_vs_fs.png" alt="ReGuide-FT vs ReGuide-FS" width="100%"/>
+            <p style="margin-top: 0.3rem;"><b>ReGuide-FT vs. ReGuide-FS.</b> Comparable accuracy;
+              FT is cheaper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Ablations. -->
 
   </div>
 </section>
@@ -444,11 +434,10 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@misc{lin2026reguide,
+  author    = {Lin, Tzu-Hsiang and Shakkottai, Srinivas and Kalathil, Dileep and Kumar, P. R.},
+  title     = {ReGuide: From Test-Time Guidance to Self-Improving Diffusion Policies},
+  year      = {2026},
 }</code></pre>
   </div>
 </section>
@@ -457,28 +446,15 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+      <a class="icon-link" href="./static/reguide_paper.pdf">
         <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
